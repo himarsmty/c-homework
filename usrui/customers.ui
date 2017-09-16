@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Customers</class>
+ <widget class="QDialog" name="Customers">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/images/userchoicebackground.png);</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>430</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出登录</string>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollareaviewpayorder">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>0</y>
+     <width>411</width>
+     <height>491</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>409</width>
+      <height>489</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="commentbtn_3">
+   <property name="geometry">
+    <rect>
+     <x>171</x>
+     <y>198</y>
+     <width>154</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
+   </property>
+   <property name="text">
+    <string>点评</string>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/CommentIcon.jpg</normaloff>:/images/CommentIcon.jpg</iconset>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>363</y>
+     <width>118</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="checkdishlineEdit">
+   <property name="geometry">
+    <rect>
+     <x>115</x>
+     <y>363</y>
+     <width>100</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="checkdish">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>363</y>
+     <width>98</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>查询做菜进度</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="foodplatebtn_3">
+   <property name="geometry">
+    <rect>
+     <x>171</x>
+     <y>115</y>
+     <width>154</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
+   </property>
+   <property name="text">
+    <string>我的订单</string>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/foodplateIcon.jpg</normaloff>:/images/foodplateIcon.jpg</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="paybtn_3">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>198</y>
+     <width>154</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
+   </property>
+   <property name="text">
+    <string>结账</string>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/PayIcon.jpg</normaloff>:/images/PayIcon.jpg</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="menubtn_3">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>115</y>
+     <width>154</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
+   </property>
+   <property name="text">
+    <string>我要点菜</string>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/MenuIcon.jpg</normaloff>:/images/MenuIcon.jpg</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="callwaiterbtn_3">
+   <property name="geometry">
+    <rect>
+     <x>171</x>
+     <y>281</y>
+     <width>154</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
+   </property>
+   <property name="text">
+    <string>呼叫服务员</string>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/ServerIcon.jpg</normaloff>:/images/ServerIcon.jpg</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="serchtablebtn_3">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>281</y>
+     <width>154</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
+   </property>
+   <property name="text">
+    <string>查看餐桌剩余</string>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/TableIcon.jpg</normaloff>:/images/TableIcon.jpg</iconset>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

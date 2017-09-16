@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/background.jpg</file>
+        <file>images/MenuIcon.jpg</file>
+        <file>images/ServerIcon.jpg</file>
+        <file>images/TableIcon.jpg</file>
+        <file>images/CommentIcon.jpg</file>
+        <file>images/PayIcon.jpg</file>
+        <file>images/foodplateIcon.jpg</file>
+        <file>images/mylogupbackground.jpg</file>
+        <file>images/userchoicebackground.png</file>
+        <file>images/true.jpg</file>
+        <file>images/desk.jpg</file>
+        <file>images/chegbg.png</file>
+        <file>images/New-WoodFloor-Style-Background-Promotion-1x1-5M-Photo-Background-3X5ft-Vinyl-Backdrop-Prop-Nice-Photo-Studio.jpg</file>
+    </qresource>
+</RCC>

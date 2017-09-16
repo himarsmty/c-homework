@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Comment</class>
+ <widget class="QDialog" name="Comment">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>411</width>
+    <height>491</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>评论区</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/images/mylogupbackground.jpg);</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>311</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 17pt &quot;Ume Gothic S5&quot;;</string>
+   </property>
+   <property name="text">
+    <string>请对（厨师/服务员）做出评价</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chefbtn">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>140</y>
+     <width>300</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 italic 24pt &quot;Ume Gothic C4&quot;;</string>
+   </property>
+   <property name="text">
+    <string>我要评价厨师</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="serverbtn">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>300</y>
+     <width>300</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 italic 24pt &quot;Ume Gothic C4&quot;;</string>
+   </property>
+   <property name="text">
+    <string>我要评价服务员</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -24,6 +24,7 @@ public:
     static int cur_server_to_desk;
     static int server_status;
     static int ctrl_menu_status;
+    static int server_confirm;
 };
 
 

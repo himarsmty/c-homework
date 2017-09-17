@@ -18,3 +18,4 @@ QString Extern::man_ser_num="z";
 int Extern::cur_server_to_desk=0;
 int Extern::server_status=0;//服务员在线状态
 int Extern::ctrl_menu_status=0;
+int Extern::server_confirm=0;

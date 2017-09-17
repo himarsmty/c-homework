@@ -71,7 +71,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>做菜质量</string>
+    <string>服务质量</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
@@ -84,7 +84,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>做菜效率</string>
+    <string>服务效率</string>
    </property>
   </widget>
   <widget class="QSlider" name="horizontalSlider">
@@ -143,7 +143,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>为他打分</string>
+    <string>为TA打分</string>
    </property>
   </widget>
  </widget>

@@ -35,6 +35,7 @@ void Serverwindow::on_chefbtn_clicked()
     {
         it.value()=3;
     }
+    Extern::server_confirm=1;
     ui->cheflineedit->setText("");
 }
 

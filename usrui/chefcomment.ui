@@ -111,7 +111,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>为他打分</string>
+    <string>为TA打分</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit">

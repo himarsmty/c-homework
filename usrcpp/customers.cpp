@@ -151,10 +151,11 @@ void Customers::on_checkdish_clicked()
             ui->checkdishlineEdit->setText(tr("做菜中"));
             ui->progressBar->setValue(66);
         }
-        if(it.value()==2)
+        if(it.value()==2||Extern::server_confirm==1)
         {
             ui->checkdishlineEdit->setText(tr("已完成,送菜中"));
             ui->progressBar->setValue(100);
+            Extern::server_confirm=0;
         }
     }
 }

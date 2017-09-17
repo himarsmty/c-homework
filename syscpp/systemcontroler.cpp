@@ -74,7 +74,7 @@ void Systemcontroler::on_addmenubtn_clicked()//提交更改
         }
         query.exec("alter table Dishinfo1 rename to Dishinfo");
     }
-
+    QMessageBox::about(NULL,tr("完成修改"),tr("已提交!"));
 }
 
 void Systemcontroler::on_deletemenubtn_clicked()//删减菜品

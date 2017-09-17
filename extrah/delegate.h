@@ -39,8 +39,8 @@ public:
         QSpinBox *spinbox = static_cast<QSpinBox*>(editor);
         //设置spinbox的数值
         spinbox->setValue(value);
-
     }
+
     void setModelData(QWidget *editor, QAbstractItemModel *model, const QModelIndex &index)const
     {
         QSpinBox *spinbox = static_cast<QSpinBox*>(editor);

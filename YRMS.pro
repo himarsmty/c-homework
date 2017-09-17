@@ -62,7 +62,6 @@ HEADERS += \
     usrh/pay.h \
     usrh/comment.h \
     extrah/delegate.h \
-    extrah/myqlist.h \
     usrh/chefcomment.h \
     usrh/servercomment.h \
     usrh/desk.h \

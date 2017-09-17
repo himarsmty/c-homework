@@ -26,4 +26,5 @@ public:
     static int ctrl_menu_status;
 };
 
+
 #endif // EXTERN_H

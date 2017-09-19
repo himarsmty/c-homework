@@ -44,7 +44,7 @@ void Chefwindow::on_confirmbtn_clicked()
         it.value()=1;
     }
     QMessageBox::about(NULL,tr("确认"),tr("已接单!"));
-    QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+    QString dbName="dishes.db";
     QSqlQuery query;
     if(connect_to_database(dbName))
     {
@@ -61,7 +61,7 @@ void Chefwindow::on_confirmbtn_clicked()
                 query.exec("update '"+Extern::loginername+"' set status='0' where name='"+m_name+"'");
             }
         }
-        QString dtname="/home/mty/DDDCPP/DATABASE/usrinfo.db";
+        QString dtname="usrinfo.db";
         if(connect_to_database(dtname))
         {
             query.exec("select*from '"+Extern::chefname+"'");
@@ -77,7 +77,7 @@ void Chefwindow::on_confirmbtn_clicked()
 
 void Chefwindow::fresh()//实时更新order
 {
-    QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+    QString dbName="dishes.db";
     QSqlQuery query;
     int n=0;//统计菜品数量
     if(connect_to_database(dbName))

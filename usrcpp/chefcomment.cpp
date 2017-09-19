@@ -57,7 +57,7 @@ void Chefcomment::on_pushButton_clicked()
             switch (ok) {
             case QMessageBox::Yes:
             {
-                QString dbName="/home/mty/DDDCPP/DATABASE/usrinfo.db";
+                QString dbName="usrinfo.db";
                 QSqlQuery query;
                 QString s=QString("%1").arg(Chefcomment::sval);
                 QString s1=QString("%1").arg(Chefcomment::effectiveness);
@@ -78,7 +78,7 @@ void Chefcomment::on_pushButton_clicked()
         }
         else
         {
-            QString dbName="/home/mty/DDDCPP/DATABASE/usrinfo.db";
+            QString dbName="usrinfo.db";
             QSqlQuery query;
             QString s=QString("%1").arg(Chefcomment::sval);
             QString s1=QString("%1").arg(Chefcomment::effectiveness);

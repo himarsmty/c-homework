@@ -25,7 +25,7 @@ Logup::~Logup()
 }
 void Logup::logup()
 {
-    QString dbName="/home/mty/DDDCPP/DATABASE/usrinfo.db";
+    QString dbName="usrinfo.db";
     if(ui->phnumLineEdit->text().trimmed().size()!=11)//判断手机号格式是否正确
     {
         QMessageBox::warning(this,tr("警告！"),tr("请输入11位正确手机号！"),QMessageBox::Yes);

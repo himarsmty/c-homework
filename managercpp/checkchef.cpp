@@ -30,7 +30,7 @@ Checkchef::Checkchef(QWidget *parent) :
     ui->lineEdit->setFocusPolicy(Qt::NoFocus);
 
     int n=0;
-    QString dbName="/home/mty/DDDCPP/DATABASE/usrinfo.db";
+    QString dbName="usrinfo.db";
     QLineSeries *series=new QLineSeries();
     QLineSeries *series1=new QLineSeries();
     QStringListModel *model=new QStringListModel(this);

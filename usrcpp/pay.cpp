@@ -18,7 +18,7 @@ Pay::Pay(QWidget *parent) :
 {
     ui->setupUi(this);
     setWindowFlags(Qt::WindowMinimizeButtonHint|Qt::WindowCloseButtonHint);//显示最大化、最小化、关闭按钮
-    QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+    QString dbName="dishes.db";
     int n=0;//统计菜单总数
     if(connect_to_database(dbName))
     {
@@ -95,7 +95,7 @@ void Pay::on_payptn_clicked()
     switch (cb) {
     case QMessageBox::Yes:
     {
-        QString dbNa="/home/mty/DDDCPP/DATABASE/dishes.db";
+        QString dbNa="dishes.db";
         if(connect_to_database(dbNa))
         {
             QSqlQuery query0;
@@ -105,7 +105,7 @@ void Pay::on_payptn_clicked()
         int release=Extern::choisen;
         Extern::choisen=0;
         QString s=QString("%1").arg(release);
-        QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+        QString dbName="dishes.db";
         if(connect_to_database(dbName))
         {
             QSqlQuery query;

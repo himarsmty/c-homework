@@ -28,7 +28,7 @@ Checkserver::Checkserver(QWidget *parent) :
     ui->lineEdit->setFocusPolicy(Qt::NoFocus);
     setFixedSize(790,450);
     setWindowTitle(Extern::man_ser_num);
-    QString dbName="/home/mty/DDDCPP/DATABASE/usrinfo.db";
+    QString dbName="usrinfo.db";
     QLineSeries *series=new QLineSeries();
     QLineSeries *series1=new QLineSeries();
     int n=0;

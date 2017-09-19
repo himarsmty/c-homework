@@ -14,7 +14,7 @@ Foodplate::Foodplate(QWidget *parent) :
 {
     ui->setupUi(this);
     setWindowFlags(Qt::WindowMinimizeButtonHint|Qt::WindowCloseButtonHint);//显示最大化、最小化、关闭按钮
-    QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+    QString dbName="dishes.db";
     int n=0;//统计菜单总数
     if(connect_to_database(dbName))
     {

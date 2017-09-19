@@ -34,9 +34,10 @@ Login::~Login()
 }
 void Login::logintomain()
 {
-    QString dbName="/home/mty/DDDCPP/DATABASE/usrinfo.db";
+    QString dbName="usrinfo.db";
     if(connect_to_database(dbName))
     {
+        qDebug()<<"login success.log";
         QString t_data="select*from Users";
         QString input_number=ui->usrEditLine->text().trimmed();
         QString input_pwd=ui->pwdEditLine->text().trimmed();

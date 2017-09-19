@@ -17,7 +17,7 @@ Serverlist::Serverlist(QWidget *parent) :
     ui->setupUi(this);
      setFixedSize(200,250);
      setWindowTitle(tr("服务生列表"));
-     QString dbName="/home/mty/DDDCPP/DATABASE/usrinfo.db";
+     QString dbName="usrinfo.db";
      if(connect_to_database(dbName))
      {
          QSqlQuery query;

@@ -40,7 +40,7 @@ void Customers::on_pushButton_clicked()
     switch (ds) {
     case QMessageBox::Yes:
     {
-        QString dbNa="/home/mty/DDDCPP/DATABASE/dishes.db";
+        QString dbNa="dishes.db";
         if(connect_to_database(dbNa))
         {
             QSqlQuery query0;
@@ -50,7 +50,7 @@ void Customers::on_pushButton_clicked()
         int release=Extern::choisen;
         Extern::choisen=0;
         QString s=QString("%1").arg(release);
-        QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+        QString dbName="dishes.db";
         if(connect_to_database(dbName))
         {
             QSqlQuery query;
@@ -117,7 +117,7 @@ void Customers::on_callwaiterbtn_3_clicked()
     if(Extern::server_status==1)
     {
         Extern::server_status==0;
-        QString dbName="/home/mty/DDDCPP/DATABASE/usrinfo.db";
+        QString dbName="usrinfo.db";
         if(connect_to_database(dbName))
         {
             QSqlQuery query;

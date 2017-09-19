@@ -16,7 +16,7 @@ Desk::Desk(QWidget *parent) :
     setWindowFlag(Qt::WindowCloseButtonHint,false);
     setWindowFlag(Qt::WindowMinimizeButtonHint,true);
     setWindowFlag(Qt::WindowMaximizeButtonHint,false);
-    QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+    QString dbName="dishes.db";
     if(connect_to_database(dbName))
     {
         QSqlQuery query;
@@ -76,7 +76,7 @@ Desk::~Desk()
 void Desk::on_btn1_clicked()
 {
     ui->btn1->setEnabled(0);//更新显示餐桌信息
-    QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+    QString dbName="dishes.db";
     if(connect_to_database(dbName))
     {
         QSqlQuery query;
@@ -94,7 +94,7 @@ void Desk::on_btn2_clicked()
 {
     ui->btn2->setEnabled(0);
         Extern::cur_server_to_desk+=1;
-    QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+    QString dbName="dishes.db";
     if(connect_to_database(dbName))
     {
         QSqlQuery query;
@@ -111,7 +111,7 @@ void Desk::on_btn2_clicked()
 void Desk::on_btn3_clicked()
 {
     ui->btn3->setEnabled(0);
-    QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+    QString dbName="dishes.db";
     if(connect_to_database(dbName))
     {
         QSqlQuery query;
@@ -128,7 +128,7 @@ void Desk::on_btn3_clicked()
 void Desk::on_btn4_clicked()
 {
     ui->btn4->setEnabled(0);
-    QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+    QString dbName="dishes.db";
     if(connect_to_database(dbName))
     {
         QSqlQuery query;
@@ -145,7 +145,7 @@ void Desk::on_btn4_clicked()
 void Desk::on_btn5_clicked()
 {
     ui->btn5->setEnabled(0);
-    QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+    QString dbName="dishes.db";
     if(connect_to_database(dbName))
     {
         QSqlQuery query;
@@ -162,7 +162,7 @@ void Desk::on_btn5_clicked()
 void Desk::on_btn6_clicked()
 {
     ui->btn6->setEnabled(0);
-    QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+    QString dbName="dishes.db";
     if(connect_to_database(dbName))
     {
         QSqlQuery query;
@@ -179,7 +179,7 @@ void Desk::on_btn6_clicked()
 void Desk::on_btn7_clicked()
 {
     ui->btn7->setEnabled(0);
-    QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+    QString dbName="dishes.db";
     if(connect_to_database(dbName))
     {
         QSqlQuery query;
@@ -196,7 +196,7 @@ void Desk::on_btn7_clicked()
 void Desk::on_btn8_clicked()
 {
     ui->btn8->setEnabled(0);
-    QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+    QString dbName="dishes.db";
     if(connect_to_database(dbName))
     {
         QSqlQuery query;
@@ -213,7 +213,7 @@ void Desk::on_btn8_clicked()
 void Desk::on_btn9_clicked()
 {
     ui->btn9->setEnabled(0);
-    QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+    QString dbName="dishes.db";
     if(connect_to_database(dbName))
     {
         QSqlQuery query;

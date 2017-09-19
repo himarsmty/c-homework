@@ -19,7 +19,7 @@ Systemcontroler::Systemcontroler(QWidget *parent) :
     setFixedSize(700,500);//设置最大窗口尺寸
     setWindowFlag(Qt::WindowCloseButtonHint,false);
     Extern::ctrl_menu_status=1;
-    QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+    QString dbName="dishes.db";
     if(connect_to_database(dbName))
     {
         model.setColumnCount(2);
@@ -55,7 +55,7 @@ void Systemcontroler::on_viewuserbtn_clicked()//查看账户信息
 
 void Systemcontroler::on_addmenubtn_clicked()//提交更改
 {
-    QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+    QString dbName="dishes.db";
     if(connect_to_database(dbName))
     {
         QSqlQuery query;
@@ -79,7 +79,7 @@ void Systemcontroler::on_addmenubtn_clicked()//提交更改
 
 void Systemcontroler::on_deletemenubtn_clicked()//删减菜品
 {
-    QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+    QString dbName="dishes.db";
     if(connect_to_database(dbName))
     {
         int curRow=ui->tableView->currentIndex().row();

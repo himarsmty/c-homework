@@ -27,7 +27,7 @@ Sysshowuserinfo::Sysshowuserinfo(QWidget *parent) :
     timer->start();
     connect(timer,SIGNAL(timeout()),this,SLOT(fresh()));
     {
-        QString dbName="/home/mty/DDDCPP/DATABASE/usrinfo.db";
+        QString dbName="usrinfo.db";
         QSqlQuery query;
         int n=0;
         if(connect_to_database(dbName))
@@ -105,7 +105,7 @@ void Sysshowuserinfo::on_pushButton_clicked()
 {
 
     {
-        QString dbName="/home/mty/DDDCPP/DATABASE/usrinfo.db";
+        QString dbName="usrinfo.db";
         QSqlQuery query;
         int n=0;
         if(connect_to_database(dbName))
@@ -178,7 +178,7 @@ void Sysshowuserinfo::on_pushButton_clicked()
 
 void Sysshowuserinfo::on_pushButton_2_clicked()
 {
-    QString dbName="/home/mty/DDDCPP/DATABASE/usrinfo.db";
+    QString dbName="usrinfo.db";
     QSqlQuery query;
     int flag=0;//是否遍历所有的标志
     QString sq,sw,se;
@@ -242,7 +242,7 @@ void Sysshowuserinfo::on_pushButton_2_clicked()
 void Sysshowuserinfo::on_pushButton_4_clicked()
 {
     {
-        QString dbName="/home/mty/DDDCPP/DATABASE/usrinfo.db";
+        QString dbName="usrinfo.db";
         QSqlQuery query;
         int n=0;
         if(connect_to_database(dbName))
@@ -312,7 +312,7 @@ void Sysshowuserinfo::on_pushButton_4_clicked()
 }
 void Sysshowuserinfo::fresh()
 {
-    QString dbName="/home/mty/DDDCPP/DATABASE/usrinfo.db";
+    QString dbName="usrinfo.db";
     QSqlQuery query;
     int n=0;
     if(connect_to_database(dbName))

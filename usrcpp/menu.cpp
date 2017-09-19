@@ -10,7 +10,7 @@ Menu::Menu(QWidget *parent) :
     ui(new Ui::Menu)
 {
     ui->setupUi(this);
-    QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+    QString dbName="dishes.db";
     if(connect_to_database(dbName))
     {
         menumodel=new QSqlTableModel(this);//new QSqlTableModel
@@ -101,7 +101,7 @@ void Menu::on_ensureptn_clicked()
     QModelIndex index=model.index(rowCount+1,3,QModelIndex());
     model.setData(index,sum);
     ordercount=0;
-    QString dbName="/home/mty/DDDCPP/DATABASE/dishes.db";
+    QString dbName="dishes.db";
     if(connect_to_database(dbName))
     {
         QSqlQuery query;

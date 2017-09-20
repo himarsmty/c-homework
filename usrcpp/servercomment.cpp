@@ -46,7 +46,6 @@ void Servercomment::on_horizontalSlider_valueChanged(int value)
 
 void Servercomment::on_pushButton_clicked()
 {
-    qDebug()<<"slidervalue="<< Servercomment::sval;
     int ds=QMessageBox::question(this,tr("提交"),tr("确定提交?"),QMessageBox::Yes|QMessageBox::No,QMessageBox::Yes);
     switch (ds) {
     case QMessageBox::Yes:
@@ -61,9 +60,7 @@ void Servercomment::on_pushButton_clicked()
                 QSqlQuery query;
                 QString s=QString("%1").arg(Servercomment::sval);
                 QString s1=QString("%1").arg(Servercomment::effectiveness);
-                qDebug()<<s;
                 QString textstr=ui->textEdit->toPlainText();
-                qDebug()<<textstr;
                 if(connect_to_database(dbName))
                 {
 
@@ -83,9 +80,7 @@ void Servercomment::on_pushButton_clicked()
             QSqlQuery query;
             QString s=QString("%1").arg(Servercomment::sval);
             QString s1=QString("%1").arg(Servercomment::effectiveness);
-            qDebug()<<s;
             QString textstr=ui->textEdit->toPlainText();
-            qDebug()<<textstr;
             if(connect_to_database(dbName))
             {
                 QString si=Extern::servername+"c";

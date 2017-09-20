@@ -46,7 +46,6 @@ void Serverlist::on_pushButton_clicked()
 {
     QString s=model.data(ui->tableView->currentIndex()).toString();
     s=s+"c";
-    qDebug()<<s;
     Extern::man_ser_num=s;
     Checkserver *server=new Checkserver(this);
     server->exec();

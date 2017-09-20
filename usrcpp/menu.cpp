@@ -18,7 +18,6 @@ Menu::Menu(QWidget *parent) :
         menumodel->setSort(2,Qt::AscendingOrder);//以单价顺序排列
         menumodel->select();//查找数据
         rowCount=menumodel->rowCount();//计算菜品总个数
-        qDebug()<<"rowCount="<<rowCount<<endl;
         model.setColumnCount(4);//创建表格列数
         model.setRowCount(rowCount+2);//创建表格行数
         ui->tableview->setModel(&model);//显示表格（QTableView）
@@ -105,7 +104,6 @@ void Menu::on_ensureptn_clicked()
     if(connect_to_database(dbName))
     {
         QSqlQuery query;
-        qDebug()<<Extern::loginername;
         for(int row=1;row<=rowCount;row++)
         {
             QModelIndex index=model.index(row,2,QModelIndex());

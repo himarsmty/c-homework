@@ -72,7 +72,6 @@ Pay::Pay(QWidget *parent) :
         }
         model.setData(index,sum);
         Pay::bill=sum;
-        qDebug()<<"bill="<<bill;
     }
 
 }
@@ -114,7 +113,6 @@ void Pay::on_payptn_clicked()
     }
         break;
     case QMessageBox::No:
-        qDebug()<<"no";
     default:
         break;
     }

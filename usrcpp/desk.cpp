@@ -26,7 +26,6 @@ Desk::Desk(QWidget *parent) :
             if(query.value(1)==1)
             {
                 int desknumber=query.value(0).toInt();
-                qDebug()<<"the chosed desk is"<<desknumber;
                 if(desknumber==1)
                 {
                     ui->btn1->setEnabled(0);

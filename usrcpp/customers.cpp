@@ -17,8 +17,6 @@ Customers::Customers(QWidget *parent) :
     setWindowFlag(Qt::WindowMinimizeButtonHint,true);
     setWindowFlag(Qt::WindowCloseButtonHint,false);
     setWindowFlag(Qt::WindowMaximizeButtonHint,false);
-
-    qDebug()<<"loginmame_Customers="<<Extern::loginername;
     ui->checkdishlineEdit->setPlaceholderText(tr("做菜进度"));
     ui->checkdishlineEdit->setFocusPolicy(Qt::NoFocus);
     ui->progressBar->setValue(0);
@@ -75,7 +73,6 @@ void Customers::on_foodplatebtn_3_clicked()
     foodplatewindow=new Foodplate(this);
     ui->scrollareaviewpayorder->setWidget(foodplatewindow);
     foodplatewindow->show();
-    qDebug()<<"food plate show"<<endl;
 }
 
 void Customers::on_menubtn_3_clicked()
@@ -85,7 +82,6 @@ void Customers::on_menubtn_3_clicked()
     menuwindow=new Menu(this);
     ui->scrollareaviewpayorder->setWidget(menuwindow);
     menuwindow->show();
-    qDebug()<<"menu has showed (this wirtten in Customers.cpp//R30)"<<endl;
 }
 
 void Customers::on_paybtn_3_clicked()

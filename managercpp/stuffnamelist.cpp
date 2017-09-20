@@ -47,7 +47,6 @@ void Stuffnamelist::on_pushButton_clicked()
 {
     QString s=model.data(ui->tableView->currentIndex()).toString();
     s=s+"c";
-    qDebug()<<s;
     Extern::man_chef_num=s;
     Checkchef *chef=new Checkchef(this);
     chef->exec();

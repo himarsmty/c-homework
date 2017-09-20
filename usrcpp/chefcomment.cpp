@@ -46,7 +46,6 @@ void Chefcomment::on_horizontalSlider_valueChanged(int value)
 
 void Chefcomment::on_pushButton_clicked()
 {
-    qDebug()<<"slidervalue="<<Chefcomment::sval;
     int ds=QMessageBox::question(this,tr("提交"),tr("确定提交?"),QMessageBox::Yes|QMessageBox::No,QMessageBox::Yes);
     switch (ds) {
     case QMessageBox::Yes:
@@ -61,9 +60,7 @@ void Chefcomment::on_pushButton_clicked()
                 QSqlQuery query;
                 QString s=QString("%1").arg(Chefcomment::sval);
                 QString s1=QString("%1").arg(Chefcomment::effectiveness);
-                qDebug()<<s;
                 QString textstr=ui->textEdit->toPlainText();
-                qDebug()<<textstr;
                 if(connect_to_database(dbName))
                 {
                     QString syu=Extern::chefname+"c";
@@ -82,9 +79,7 @@ void Chefcomment::on_pushButton_clicked()
             QSqlQuery query;
             QString s=QString("%1").arg(Chefcomment::sval);
             QString s1=QString("%1").arg(Chefcomment::effectiveness);
-            qDebug()<<s;
             QString textstr=ui->textEdit->toPlainText();
-            qDebug()<<textstr;
             if(connect_to_database(dbName))
             {
                  QString syu=Extern::chefname+"c";

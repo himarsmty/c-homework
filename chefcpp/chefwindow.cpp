@@ -68,7 +68,6 @@ void Chefwindow::on_confirmbtn_clicked()
             query.next();
             int all_f_dish=query.value(0).toInt()+Extern::cur_finished_dish;
             QString str_all_f_dish=QString("%1").arg(all_f_dish);
-            qDebug()<<"all_f_dish"<<all_f_dish;
             query.exec("update '"+Extern::chefname+"'set dishamount='"+str_all_f_dish+"'");
             Extern::cur_finished_dish=0;
         }
@@ -102,7 +101,6 @@ void Chefwindow::fresh()//实时更新order
             n++;
             while(query.next())
             {
-                qDebug()<<"chef::status"<<query.value(5).toInt();
                 index=model.index(n,0,QModelIndex());
                 model.setData(index,query.value(0));
                 index=model.index(n,1,QModelIndex());

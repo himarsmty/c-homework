@@ -50,7 +50,6 @@ Checkchef::Checkchef(QWidget *parent) :
             series->append(query.value(0).toInt(),query.value(1).toInt());
             series1->append(query.value(0).toInt(),query.value(4).toInt());
             n++;
-            qDebug()<<n;
             QString s1="用户:"+query.value(3).toString();
             QString s2="工作质量评分:"+query.value(1).toString();
             QString s4="工作效率评分"+query.value(4).toString();

@@ -37,7 +37,6 @@ void Login::logintomain()
     QString dbName="usrinfo.db";
     if(connect_to_database(dbName))
     {
-        qDebug()<<"login success.log";
         QString t_data="select*from Users";
         QString input_number=ui->usrEditLine->text().trimmed();
         QString input_pwd=ui->pwdEditLine->text().trimmed();
@@ -77,7 +76,6 @@ void Login::logintomain()
                 else if(input_number==query.value(1).toString()&&query.value(3).toString()=="顾客")
                 {
                     Extern::loginername=input_number;
-                    qDebug()<<"in login.cpp Extern::loginername"<<Extern::loginername;
                     Extern::allloginer.insert(input_number,0);
                     customer=new Customers(this);
                     customer->show();

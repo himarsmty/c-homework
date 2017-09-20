@@ -68,7 +68,6 @@ void Systemcontroler::on_addmenubtn_clicked()//提交更改
             QModelIndex indez=model.index(i,1,QModelIndex());
             QString s=model.data(index).toString();
             QString sz=model.data(indez).toString();
-            qDebug()<<s<<sz;
             if(s=="")break;
             query.exec("insert into Dishinfo1(Dishname,Dishprice) Values('"+s+"','"+sz+"')");
         }

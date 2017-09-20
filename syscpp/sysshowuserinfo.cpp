@@ -84,8 +84,6 @@ Sysshowuserinfo::Sysshowuserinfo(QWidget *parent) :
                 break;
             }
         }
-        qDebug()<<"n"<<n;
-        qDebug()<<"m"<<m;
         ComboBoxDelegate *comboxdelegate=new ComboBoxDelegate;
         ui->tableView->setItemDelegateForColumn(2,comboxdelegate);
         ReadOnlyDelegate *readonlydelegate=new ReadOnlyDelegate;
@@ -162,8 +160,6 @@ void Sysshowuserinfo::on_pushButton_clicked()
                 break;
             }
         }
-        qDebug()<<"n"<<n;
-        qDebug()<<"m"<<m;
         ComboBoxDelegate *comboxdelegate=new ComboBoxDelegate;
         ui->tableView->setItemDelegateForColumn(2,comboxdelegate);
         ReadOnlyDelegate *readonlydelegate=new ReadOnlyDelegate;
@@ -298,8 +294,6 @@ void Sysshowuserinfo::on_pushButton_4_clicked()
                 break;
             }
         }
-        qDebug()<<"n"<<n;
-        qDebug()<<"m"<<m;
         ComboBoxDelegate *comboxdelegate=new ComboBoxDelegate;
         ui->tableView->setItemDelegateForColumn(2,comboxdelegate);
         ReadOnlyDelegate *readonlydelegate=new ReadOnlyDelegate;
@@ -323,6 +317,5 @@ void Sysshowuserinfo::fresh()
             n++;
         }
         Extern::cur_users=n;
-        qDebug()<<Extern::cur_users;
     }
 }

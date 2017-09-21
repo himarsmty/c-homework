@@ -3,16 +3,16 @@
 
 #include <QDialog>
 #include <QDebug>
+#include <QSqlQuery>
 
 #include "extrah/extern.h"
 #include "extrah/yrmssqlite.h"
-#include <QSqlQuery>
+
 Customers::Customers(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Customers)
 {
     ui->setupUi(this);
-
     setFixedSize(800,500);//设置固定窗口尺寸
     setWindowFlag(Qt::WindowMinimizeButtonHint,true);
     setWindowFlag(Qt::WindowCloseButtonHint,false);

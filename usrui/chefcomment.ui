@@ -18,7 +18,9 @@
     <normaloff>:/images/commetimages.jpg</normaloff>:/images/commetimages.jpg</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/images/true.jpg);</string>
+   <string notr="true">QDialog#Chefcomment{
+background-image: url(:/images/true.jpg);
+}</string>
   </property>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
@@ -61,6 +63,43 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
    <property name="text">
     <string>提交</string>
    </property>
@@ -73,6 +112,9 @@
      <width>67</width>
      <height>17</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;文泉驿等宽微米黑&quot;;</string>
    </property>
    <property name="text">
     <string>做菜效率</string>
@@ -110,6 +152,9 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 14pt &quot;文泉驿等宽微米黑&quot;;</string>
+   </property>
    <property name="text">
     <string>为TA打分</string>
    </property>
@@ -132,6 +177,9 @@
      <width>67</width>
      <height>17</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;文泉驿等宽微米黑&quot;;</string>
    </property>
    <property name="text">
     <string>做菜质量</string>

@@ -2,6 +2,8 @@
 #include "ui_menu.h"
 
 #include <QString>
+#include <QPalette>
+
 #include "extrah/delegate.h"
 #include "extrah/extern.h"
 
@@ -21,6 +23,9 @@ Menu::Menu(QWidget *parent) :
         model.setColumnCount(4);//创建表格列数
         model.setRowCount(rowCount+2);//创建表格行数
         ui->tableview->setModel(&model);//显示表格（QTableView）
+        QPalette palette=ui->tableview->palette();
+        palette.setBrush(QPalette::Base,QBrush(QColor(255,255,255,0.9)));
+        ui->tableview->setPalette(palette);
         SpinBoxDelegate *mydelegate=new SpinBoxDelegate(this);//new SpinBoxDelegate
         ui->tableview->setItemDelegate(mydelegate);//选择自己的代理模式
         ui->tableview->setGridStyle(Qt::DotLine);//点状显示间隔线
@@ -28,7 +33,6 @@ Menu::Menu(QWidget *parent) :
         ui->tableview->horizontalHeader()->setStretchLastSection(true);
         ui->tableview->setSelectionMode(QAbstractItemView::SingleSelection);//单独筛选
         ui->tableview->setSelectionBehavior(QAbstractItemView::SelectRows);//按行显示
-
         for(int i=1;i<=rowCount;i++)//让数量和总价钱初始置位0
         {
             QModelIndex index=model.index(i,3,QModelIndex());
@@ -149,6 +153,6 @@ void Menu::on_ensureptn_clicked()
             }
         }
     }
-    QMessageBox::about(this,tr("点餐完毕"),tr("您可以继续选择打开菜单加菜或查看订单"));
+    QMessageBox::about(NULL,tr("点餐完毕"),tr("您可以继续选择打开菜单加菜或查看订单"));
     this->close();
 }

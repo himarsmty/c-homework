@@ -14,7 +14,9 @@
    <string/>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/images/chegbg.png);</string>
+   <string notr="true">QDialog#Managerwindow{
+background-image: url(:/images/chegbg.png);
+}</string>
   </property>
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
@@ -24,6 +26,43 @@
      <width>121</width>
      <height>51</height>
     </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 75 23pt &quot;Ume Gothic&quot;;</string>
@@ -41,6 +80,43 @@
      <height>150</height>
     </rect>
    </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
    <property name="styleSheet">
     <string notr="true">font: 75 23pt &quot;Ume Gothic&quot;;</string>
    </property>
@@ -56,6 +132,43 @@
      <width>350</width>
      <height>150</height>
     </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 75 23pt &quot;Ume Gothic&quot;;</string>

@@ -14,7 +14,9 @@
    <string>注册成为顾客</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/images/mylogupbackground.jpg);</string>
+   <string notr="true">QDialog#Logup{
+background-image: url(:/images/mylogupbackground.jpg);
+}</string>
   </property>
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
@@ -36,7 +38,7 @@
     <item row="0" column="0" alignment="Qt::AlignVCenter">
      <widget class="QLabel" name="phnumlabel">
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(252, 233, 79);</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>手机号：</string>
@@ -59,34 +61,105 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="gridLayoutWidget_2">
+  <widget class="QPushButton" name="logupbtn">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>240</x>
      <y>280</y>
-     <width>291</width>
-     <height>61</height>
+     <width>75</width>
+     <height>31</height>
     </rect>
    </property>
-   <layout class="QGridLayout" name="gridLayout_5">
-    <item row="0" column="2" alignment="Qt::AlignHCenter">
-     <widget class="QPushButton" name="returbtn">
-      <property name="text">
-       <string>返回</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0" alignment="Qt::AlignHCenter">
-     <widget class="QPushButton" name="logupbtn">
-      <property name="text">
-       <string>注册</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <layout class="QHBoxLayout" name="horizontalLayout_2"/>
-    </item>
-   </layout>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="text">
+    <string>注册</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="returbtn">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>280</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
   </widget>
  </widget>
  <resources/>

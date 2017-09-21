@@ -10,11 +10,50 @@
     <height>500</height>
    </rect>
   </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>52</red>
+        <green>101</green>
+        <blue>164</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>52</red>
+        <green>101</green>
+        <blue>164</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>52</red>
+        <green>101</green>
+        <blue>164</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/images/userchoicebackground.png);</string>
+   <string notr="true">QDialog#Customers {
+	background-image: url(:/images/candy.jpg);
+}</string>
   </property>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
@@ -24,6 +63,43 @@
      <width>141</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
    </property>
    <property name="text">
     <string>退出登录</string>
@@ -37,6 +113,9 @@
      <width>411</width>
      <height>491</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(114, 159, 207,0.9);</string>
    </property>
    <property name="widgetResizable">
     <bool>true</bool>
@@ -61,6 +140,43 @@
      <height>32</height>
     </rect>
    </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
    <property name="styleSheet">
     <string notr="true">
 font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
@@ -69,7 +185,7 @@ font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
     <string>点评</string>
    </property>
    <property name="icon">
-    <iconset resource="images.qrc">
+    <iconset resource="../images.qrc">
      <normaloff>:/images/CommentIcon.jpg</normaloff>:/images/CommentIcon.jpg</iconset>
    </property>
   </widget>
@@ -108,6 +224,43 @@ font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
      <height>31</height>
     </rect>
    </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
    <property name="text">
     <string>查询做菜进度</string>
    </property>
@@ -121,6 +274,43 @@ font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
      <height>32</height>
     </rect>
    </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
    <property name="styleSheet">
     <string notr="true">
 font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
@@ -129,7 +319,7 @@ font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
     <string>我的订单</string>
    </property>
    <property name="icon">
-    <iconset resource="images.qrc">
+    <iconset resource="../images.qrc">
      <normaloff>:/images/foodplateIcon.jpg</normaloff>:/images/foodplateIcon.jpg</iconset>
    </property>
   </widget>
@@ -142,6 +332,43 @@ font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
      <height>32</height>
     </rect>
    </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
    <property name="styleSheet">
     <string notr="true">
 font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
@@ -150,7 +377,7 @@ font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
     <string>结账</string>
    </property>
    <property name="icon">
-    <iconset resource="images.qrc">
+    <iconset resource="../images.qrc">
      <normaloff>:/images/PayIcon.jpg</normaloff>:/images/PayIcon.jpg</iconset>
    </property>
   </widget>
@@ -163,6 +390,43 @@ font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
      <height>32</height>
     </rect>
    </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
    <property name="styleSheet">
     <string notr="true">
 font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
@@ -171,7 +435,7 @@ font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
     <string>我要点菜</string>
    </property>
    <property name="icon">
-    <iconset resource="images.qrc">
+    <iconset resource="../images.qrc">
      <normaloff>:/images/MenuIcon.jpg</normaloff>:/images/MenuIcon.jpg</iconset>
    </property>
   </widget>
@@ -184,6 +448,43 @@ font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
      <height>32</height>
     </rect>
    </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
    <property name="styleSheet">
     <string notr="true">
 font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
@@ -192,7 +493,7 @@ font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
     <string>呼叫服务员</string>
    </property>
    <property name="icon">
-    <iconset resource="images.qrc">
+    <iconset resource="../images.qrc">
      <normaloff>:/images/ServerIcon.jpg</normaloff>:/images/ServerIcon.jpg</iconset>
    </property>
   </widget>
@@ -205,6 +506,43 @@ font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
      <height>32</height>
     </rect>
    </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>114</red>
+         <green>159</green>
+         <blue>207</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
    <property name="styleSheet">
     <string notr="true">
 font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
@@ -213,13 +551,13 @@ font: 75 16pt &quot;方正隶书_GBK&quot;;</string>
     <string>查看餐桌剩余</string>
    </property>
    <property name="icon">
-    <iconset resource="images.qrc">
+    <iconset resource="../images.qrc">
      <normaloff>:/images/TableIcon.jpg</normaloff>:/images/TableIcon.jpg</iconset>
    </property>
   </widget>
  </widget>
  <resources>
-  <include location="images.qrc"/>
+  <include location="../images.qrc"/>
  </resources>
  <connections/>
 </ui>

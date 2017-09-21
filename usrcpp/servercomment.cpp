@@ -46,13 +46,13 @@ void Servercomment::on_horizontalSlider_valueChanged(int value)
 
 void Servercomment::on_pushButton_clicked()
 {
-    int ds=QMessageBox::question(this,tr("提交"),tr("确定提交?"),QMessageBox::Yes|QMessageBox::No,QMessageBox::Yes);
+    int ds=QMessageBox::question(NULL,tr("提交"),tr("确定提交?"),QMessageBox::Yes|QMessageBox::No,QMessageBox::Yes);
     switch (ds) {
     case QMessageBox::Yes:
     {
         if(Servercomment::sval==0||Servercomment::effectiveness==0)
         {
-            int ok=QMessageBox::question(this,tr("来自服务生的请求"),tr("客官,您确定要打零分吗QAQ"),QMessageBox::Yes|QMessageBox::No,QMessageBox::Yes);
+            int ok=QMessageBox::question(NULL,tr("来自服务生的请求"),tr("客官,您确定要打零分吗QAQ"),QMessageBox::Yes|QMessageBox::No,QMessageBox::Yes);
             switch (ok) {
             case QMessageBox::Yes:
             {

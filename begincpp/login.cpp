@@ -6,7 +6,7 @@
 #include <QLineEdit>
 #include <QTextEdit>
 #include <QProgressBar>
-
+#include <QPalette>
 #include "extrah/extern.h"
 #include "extrah/yrmssqlite.h"
 #include "beginh/logup.h"
@@ -21,6 +21,9 @@ Login::Login(QWidget *parent) :
     ui->setupUi(this);
     setFixedSize(700,500);//设置窗口尺寸
     setWindowFlag(Qt::WindowCloseButtonHint,false);
+    QPalette palette;
+    palette.setBrush(QPalette::Background,QBrush(QPixmap("/home/mty/DDDCPP/YRMS/images/open.jpg")));
+    this->setPalette(palette);
     ui->login->setDefault(true);
     ui->usrEditLine->setFocus();
     ui->title->setStyleSheet("color:#FFF;font-size:30px;");//设置标题字体

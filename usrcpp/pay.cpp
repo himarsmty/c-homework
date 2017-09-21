@@ -90,7 +90,7 @@ void Pay::on_payptn_clicked()
     {
         it.value()=0;
     }
-    int cb=QMessageBox::question(this,tr("结账!"),splus,QMessageBox::No|QMessageBox::Yes,QMessageBox::No);
+    int cb=QMessageBox::question(NULL,tr("结账!"),splus,QMessageBox::No|QMessageBox::Yes,QMessageBox::No);
     switch (cb) {
     case QMessageBox::Yes:
     {
@@ -100,7 +100,7 @@ void Pay::on_payptn_clicked()
             QSqlQuery query0;
             query0.exec("drop table '"+Extern::loginername+"'");
         }
-        QMessageBox::about(this,tr("已结账！"),tr("感谢您的光临!"));
+        QMessageBox::about(NULL,tr("已结账！"),tr("感谢您的光临!"));
         int release=Extern::choisen;
         Extern::choisen=0;
         QString s=QString("%1").arg(release);

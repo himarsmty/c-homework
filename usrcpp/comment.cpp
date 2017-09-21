@@ -6,7 +6,6 @@ Comment::Comment(QWidget *parent) :
     ui(new Ui::Comment)
 {
     ui->setupUi(this);
-    //    setFixedSize(331,491);//设置固定窗口尺寸
     setWindowFlags(Qt::WindowMinimizeButtonHint|Qt::WindowCloseButtonHint);//显示最大化、最小化、关闭按钮
 }
 

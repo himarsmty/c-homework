@@ -133,7 +133,7 @@ void Chefwindow::on_pushButton_clicked()
 
 void Chefwindow::on_pushButton_2_clicked()
 {
-    int db=QMessageBox::warning(this,tr("即将退出"),tr("您确定要退出吗?"),QMessageBox::Yes|QMessageBox::No);
+    int db=QMessageBox::warning(NULL,tr("即将退出"),tr("您确定要退出吗?"),QMessageBox::Yes|QMessageBox::No);
     switch (db) {
     case QMessageBox::Yes:
         this->close();

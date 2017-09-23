@@ -6,6 +6,7 @@
 #include <QMessageBox>
 #include <QPalette>
 #include <QString>
+#include <QByteArray>
 
 Logup::Logup(QWidget *parent) :
     QDialog(parent),
@@ -26,12 +27,29 @@ Logup::~Logup()
 void Logup::logup()
 {
     QString dbName="usrinfo.db";
-    if(ui->phnumLineEdit->text().trimmed().size()!=11)//判断手机号格式是否正确
+    QByteArray ch =ui->phnumLineEdit->text().toLatin1();
+    char *s=ch.data();
+    while(*s && *s>='0'&&*s<='9')
     {
-        QMessageBox::warning(this,tr("警告！"),tr("请输入11位正确手机号！"),QMessageBox::Yes);
+        s++;
+    }
+    if(ui->phnumLineEdit->text().trimmed().size()!=11||*s!=NULL)//判断手机号格式是否正确
+    {
+        QMessageBox::warning(this,tr("警告！"),tr("请输入11位正确手机号！"),QMessageBox::Retry);
         ui->phnumLineEdit->clear();
         ui->codelineEdit->clear();
         ui->phnumLineEdit->setFocus();
+    }
+    else if(ui->codelineEdit->text().isEmpty()||ui->ensure_codelineedit->text().isEmpty())
+    {
+        QMessageBox::warning(this,tr("警告"),tr("请输入密码"),QMessageBox::Retry);
+    }
+    else if(ui->codelineEdit->text()!=ui->ensure_codelineedit->text())
+    {
+        QMessageBox::warning(this,tr("警告"),tr("两次密码输入不一致"),QMessageBox::Retry);
+        ui->codelineEdit->clear();
+        ui->ensure_codelineedit->clear();
+        ui->codelineEdit->setFocus();
     }
     else
     {
